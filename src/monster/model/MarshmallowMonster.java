@@ -29,13 +29,4 @@ public class MarshmallowMonster
 		this.noseCount = noseCount;
 		this.hasBellyButton = hasBellyButton;
 	}
-	
-	/*
-	 * monster name is Kroll
-	 * has 2 antennas
-	 * has 2 eyes
-	 * has 2 legs
-	 * has 2 noses
-	 * has a belly button
-	 */
 }
