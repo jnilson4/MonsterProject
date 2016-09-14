@@ -15,11 +15,11 @@ public class MonsterController
 	{
 		System.out.println("We made monsters today!");
 		System.out.println("Here is mine " + firstMonster);
-		System.out.println("My monster has this many antennas" + firstMonster.getAntennaCount());
-		System.out.println("My monster has this many eyes" + firstMonster.getEyeCount());
-		System.out.println("My monster has this many legs" + firstMonster.getLegCount());
-		System.out.println("My monster has this many noses" + firstMonster.getNoseCount());
-		System.out.println("Does my monster have a belly button?" + firstMonster.getHasBellyButton());
+		System.out.println("My monster has this many antennas " + firstMonster.getAntennaCount());
+		System.out.println("My monster has this many eyes " + firstMonster.getEyeCount());
+		System.out.println("My monster has this many legs " + firstMonster.getLegCount());
+		System.out.println("My monster has this many noses " + firstMonster.getNoseCount());
+		System.out.println("Does my monster have a belly button? " + firstMonster.getHasBellyButton());
 	}
 	/*
 	 * monster name is Kroll
