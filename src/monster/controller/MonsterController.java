@@ -1,14 +1,18 @@
 package monster.controller;
 
 import monster.model.MarshmallowMonster;
+import java.util.Scanner;
 
 public class MonsterController 
 {
 	private MarshmallowMonster firstMonster;
+	private Scanner keyboardInput;
 	
 	public MonsterController()
 	{
 		firstMonster = new MarshmallowMonster("Kroll", 2, 2, 2, 2, true);
+		keyboardInput = new Scanner(System.in);
+		
 	}
 	
 	public void start()
@@ -20,13 +24,8 @@ public class MonsterController
 		System.out.println("My monster has this many legs " + firstMonster.getLegCount());
 		System.out.println("My monster has this many noses " + firstMonster.getNoseCount());
 		System.out.println("Does my monster have a belly button? " + firstMonster.getHasBellyButton());
+		
+		System.out.println("Do you want to change my name?");
+		String answer = keyboardInput.nextLine();
 	}
-	/*
-	 * monster name is Kroll
-	 * has 2 antennas
-	 * has 2 eyes
-	 * has 2 legs
-	 * has 2 noses
-	 * has a belly button
-	 */
 }
