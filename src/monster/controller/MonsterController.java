@@ -55,13 +55,57 @@ public class MonsterController
 			System.out.println("I get to keep all my antennas! :D");
 		}
 		
-		System.out.println(newAntennaCount);
+		System.out.println(firstMonster.getAntennaCount());
 		
 		//EyeCount
 		
 		System.out.println("Do you want to change how many eyes I have?");
-		String eyeCount = keyboardInput.nextLine();
+		String eyeAnswer = keyboardInput.nextLine();
 		
+		if (eyeAnswer.equalsIgnoreCase("Yes"))
+		{
+			System.out.println("How many eyes do you want me to have?");
+			int newEyeCount = keyboardInput.nextInt();
+			firstMonster.setEyeCount(newEyeCount);
+		} else {
+			System.out.println("I get to keep all my eyes! :D");
+		}
+		
+		System.out.println(firstMonster.getEyeCount());
+		
+		//LegCount
+		
+		System.out.println("Do you want to change how many legs I have??");
+		String legAnswer = keyboardInput.nextLine();
+		
+		if (legAnswer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("How many legs do you want me to have?");
+			int newLegCount = keyboardInput.nextInt();
+			firstMonster.setLegCount(newLegCount);
+		} else {
+			System.out.println("I get to keep all of my legs!");
+		}
+		
+		System.out.println(firstMonster.getLegCount());
+		
+		//NoseCount
+		
+		System.out.println("Do you want to change how many noses I have?");
+		String noseAnswer = keyboardInput.nextLine();
+		
+		if (noseAnswer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("How many eyes noses do you want me to have?");
+			int newNoseCount = keyboardInput.nextInt();
+			firstMonster.setNoseCount(newNoseCount);
+		} else {
+			System.out.println("I get to keep all my noses! :D");
+		}
+		
+		System.out.println(firstMonster.getNoseCount());
+		
+		//HasBellyButton
 		
 	}
 }
