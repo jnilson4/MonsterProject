@@ -107,6 +107,19 @@ public class MonsterController
 		
 		//HasBellyButton
 		
+		System.out.println("Do you want to change if I have a belly button or not?");
+		String bellyAnswer = keyboardInput.nextLine();
+		
+		if (bellyAnswer.equalsIgnoreCase("yes"))
+		{
+			System.out.println("Do you want me to have a belly button or not?");
+			boolean newHasBellyButton = keyboardInput.nextBoolean();
+			firstMonster.setHasBellyButton(newHasBellyButton);
+		} else {
+			System.out.println("I get to keep my belly button! :D");
+		}
+		
+		System.out.println(firstMonster.getHasBellyButton());
 	}
 }
 
